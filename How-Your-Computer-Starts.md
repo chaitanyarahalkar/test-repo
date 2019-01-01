@@ -75,3 +75,6 @@ Run level 6 – /etc/rc.d/rc6.d/
 ```
 
 Each of these direcroties have programs starting with S (Used during startup) and K(Used during shutdown)
+
+Here is how Systemd startup looks:
+![Systemd](systemd.png "Systemd")
