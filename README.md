@@ -175,8 +175,8 @@ The very popluar permission set that is seen is
 
 Let us break it into parts
 
-7 - Read,write & Execute permissions to the user
-5 - Read & Execute permission to the group of the user
+* 7 - Read,write & Execute permissions to the user
+* 5 - Read & Execute permission to the group of the user
 
 The way to remember this number system is referring to the binary equivalent of the octal number.
 
