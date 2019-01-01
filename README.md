@@ -180,7 +180,7 @@ Let us break it into parts
 
 The way to remember this number system is referring to the binary equivalent of the octal number.
 
-![Octal permissions](permissions-03.png "Octal permissions")
+![Octal permissions](octal-permission.png "Octal permissions")
 
 A set bit indicates that the permission exists and a clear bit indicates that it is removed.
 
