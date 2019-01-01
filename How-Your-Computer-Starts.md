@@ -22,8 +22,11 @@ The BIOS has a boot sequence configured which searches for the boot devices sequ
 Booting devices can be of several types:
 
 1.CD Drives
+
 2.Hard Disk Drives
+
 3.USB Drives
+
 4.Network
 
 As soon as it finds the boot device, it looks for the Master Boot Record. The MBR has number of partitions in it. If any active partition is found it is loaded into memory.
