@@ -182,7 +182,12 @@ The way to remember this number system is referring to the binary equivalent of 
 
 ![Octal permissions](octal-permission.png "Octal permissions")
 
+
 A set bit indicates that the permission exists and a clear bit indicates that it is removed.
+Similar permissions can be assigned to directories as well.
+
+##### SUID & SGID Permissions
+
 
 
 
