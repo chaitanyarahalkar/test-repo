@@ -26,7 +26,7 @@ which ls
 ```
 The which command shows the location of the binary executable of ls.
 
-What is the $PATH environment variable? 
+##### What is the $PATH environment variable? 
 
 
 Every Linux & Unix System has several environment variables which are dynamic variables essential for running several processes in the system.
