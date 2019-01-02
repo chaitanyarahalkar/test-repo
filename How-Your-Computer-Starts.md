@@ -32,7 +32,7 @@ Booting devices can be of several types:
 As soon as it finds the boot device, it looks for the Master Boot Record. The MBR has number of partitions in it. If any active partition is found it is loaded into memory.
 
 
-##### Master Boot Record
+#### Master Boot Record
 It is a special type of boot sector at the beginning of data drives. It holds information about the logical partitions,organisation of the file systems and also a boot loader. The boot loader is responsible to load the kernel(A subset of the entire OS) into memory.
 It may happen that the selected memory drive has multiple operating systems. The bootloader allows selection of the OS(Along with different kernels)to be loaded. GRUB is an open source bootloader by GNU prominently seen on most Linux Distributions. 
 
