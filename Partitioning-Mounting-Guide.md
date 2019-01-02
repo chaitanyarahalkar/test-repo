@@ -17,6 +17,8 @@ Every disk can have three kinds of partitions as per the MBR scheme -
 
 These partitions can be found named with the conventions /dev/sda1,/dev/sda2 etc. 
 
+(Enter all the commands mentioned below in root or with a sudoers' user)
+
 #### Mounting drives in Linux
 
 Running ``` fdisk -l ``` in root lists out the number of drives that are mounted on the system. ``` /dev/sda ``` is usually the hard drive or SSD on which the OS is running. Other external drives can be found ususally at ``` /dev/sdb ```
@@ -25,6 +27,7 @@ Running ``` fdisk -l ``` in root lists out the number of drives that are mounted
 
 Whenever an external drive is inserted it is usually automatically mounted. To format a drive it must be unmounted first.
 
+Drives can also be mounted with ```mount /dev/sda /mnt``` if the drive to be mounted is ```/dev/sda``` and the mount location is ```/mnt```.
 
 #### Formatting drives in Linux 
 
@@ -34,9 +37,7 @@ GParted may be installed on the aptitude package manager supporting OSes by
 ``` apt-get install gparted ```
 
 Entering ``` umount /dev/sdc1 ``` in root if sdc1 is the drive mount point, will unmount the external drive. 
-Format the drive with the mkfs utility provided with Linux. 
-(Enter the commands in root or with a sudoers' user)
-
+Format the drive with the mkfs utility provided with Linux
 
 ```
 mkfs.ext4 /dev/sdc1 For ext4 file system
