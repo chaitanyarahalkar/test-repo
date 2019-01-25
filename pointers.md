@@ -49,7 +49,6 @@ Here a new linked-list node is created and the pointer in the node is pointing t
 3. If a pointer is pointing to a memory location that has been deleted/freed, it is called a dangling pointer.
 
 ``` 
-
 int *p = (int*)malloc(5*sizeof(int));
 free(p);
 
@@ -82,7 +81,6 @@ printf("%d",*((int*)p));
 p = &b;
 
 printf("%c",*((char*)p));
-
 
 ```
 
@@ -151,6 +149,7 @@ p = &a;
 printf("Element at position 2 is:%d",(*p)[1]);
 
 ```
+Removing the parenthesis around p changes the meaning of the declaration completely. (``` int *p[4]; ```). It indicates the declaration of an array of integer pointers.
 
 Array pointers point to the entire array and not to the first element of the array. Note the difference between the above snippet and the code shown below
 
@@ -208,7 +207,6 @@ In the above program,bar is a function pointer pointing to the function foo. Ins
 Function pointers are used for callback functioning. They are also useful to simplify code.
 
 ```
-
 switch(foo)
 {
 	case 1:bar1();break;
@@ -275,3 +273,25 @@ int main(void)
 ```
 The compare function is passed as an argument to the sort function. This mechanism allows the sort function to sort any kind of data. This is the backbone of templates in C++.
 
+Function pointers are useful to create wrapper functions. Consider a scenario where an existing function is to be modified without making changes in the existing code.
+
+```
+int wrapper(int (*func)())
+{
+	return(func()*func());
+}
+
+int foo()
+{
+	return(5*5);
+}
+
+int main(void)
+{
+	printf("%d",wrapper(foo));
+	return 0;
+}
+
+```
+
+Thus if we wish to calculate the 4th power of 5 we can do so by creating a wrapper function instead of tampering with the exisitng code.
